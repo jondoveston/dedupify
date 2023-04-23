@@ -16,6 +16,13 @@ import (
 	"github.com/cespare/xxhash/v2"
 )
 
+var (
+	version = "0.0.1"
+	commit  = "HEAD"
+	date    = "now"
+	builtBy = "jondoveston"
+)
+
 var size int64 = 0
 var fs []File
 

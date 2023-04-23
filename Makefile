@@ -5,7 +5,7 @@ WORKING_PATH = .
 DOCKER_CMD =
 VERSION ?= 0.0.1
 
-$(APP):
+$(APP): main.go
 	$(DOCKER_CMD) go build -ldflags="-X 'main.version=$(VERSION)'" -o $(WORKING_PATH)/$(APP) main.go
 
 build: $(APP)
