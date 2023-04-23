@@ -16,7 +16,7 @@ again (a change in file size or mod time will trigger a rehash).
 The optional second argument sets a minimum size filter for the files using
 https://github.com/c2h5oh/datasize.
 
-```
+```sh
 $ dedupify hash 1mb 1>dedupify1.json
 Min size 1048576
 Too small: Makefile
@@ -83,7 +83,7 @@ The search command will use the JSON piped in to search for files with the same
 hash and display the results. Human readable messages are output to STDERR and a
 list of the duplicate files to delete are output to STDOUT.
 
-```
+```sh
 $ cp dedupify dedupify_copy
 
 $ dedupify hash 1mb 1>dedupify.json
