@@ -1,1 +1,8 @@
-dedupify
+/dedupify
+/dist/
+/.task/
+coverage.out
+
+# Nix build output
+/result
+/result-*
